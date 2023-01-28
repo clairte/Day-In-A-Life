@@ -1,6 +1,6 @@
 import React from 'react'; 
 
-function Start (){
+function Morning (){
 
     return(
         <div>
@@ -9,4 +9,4 @@ function Start (){
     )
 }
 
-export default Start; 
+export default Morning; 

@@ -8,7 +8,6 @@ function DefaultButton({text, route}) {
     return (
         <div>
             <Button 
-            variant = "outlined"
             component={Link} to={route}
             size="small"
             style={textStyle}>

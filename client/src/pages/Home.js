@@ -11,7 +11,7 @@ function Home() {
             <h1> This is our home page. </h1>
             <p> We could introduce the game here </p>
             <div>
-                <DefaultButton text="Begin" route="/start"/>
+                <DefaultButton text="Begin" route="/morning"/>
             </div>
         </div>
     )
