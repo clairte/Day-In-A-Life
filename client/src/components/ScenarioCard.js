@@ -7,13 +7,13 @@ import Typography from '@mui/material/Typography';
 
 function ScenarioCard ({text, image}) {
     return (
-        <Card sx={{ maxWidth: 345}}>
+        <Card sx={{ maxWidth: 600}}>
             <CardMedia
                 component="img"
                 alt="shower"
                 image={image}
                 height="300"
-                width="400"
+                width="500"
              />
              <CardContent>
                 <Typography variant="body2" color="text.secondary">

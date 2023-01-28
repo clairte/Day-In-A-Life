@@ -1,16 +1,19 @@
 import React from 'react'; 
 
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
+import Box from '@mui/material/Box'; 
 
 import DefaultButton from './DefaultButton';
 
 
-function ChoiceCard({choice1, choice2, route1, route2}){
+function ChoiceCard({choice, route}){
     return(
-        <Card sx={{ maxWidth: 345}}>
-            <DefaultButton text={choice1} route={route1} /> 
-            <DefaultButton text={choice2} route={route2} /> 
+        <Card 
+        sx={{ display: 'flex' }}>
+            <Box 
+            sx={{ display: 'flex', alignItems: 'center', p: 1}}>
+                <DefaultButton text={choice} route={route} /> 
+            </Box>
         </Card>
     )
 }
