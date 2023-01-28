@@ -6,11 +6,11 @@ import CardActions from '@mui/material/CardActions';
 import DefaultButton from './DefaultButton';
 
 
-function ChoiceCard(){
+function ChoiceCard({choice1, choice2, route1, route2}){
     return(
         <Card sx={{ maxWidth: 345}}>
-            <DefaultButton text="Choice 1" route="/choice1page" /> 
-            <DefaultButton text="Choice 2" route="/choice2page" /> 
+            <DefaultButton text={choice1} route={route1} /> 
+            <DefaultButton text={choice2} route={route2} /> 
         </Card>
     )
 }
