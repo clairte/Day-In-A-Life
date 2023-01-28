@@ -6,6 +6,7 @@ import Morning from './pages/Morning.js';
 
 //Components for testing 
 import ChoiceCard from './components/ChoiceCard.js';
+import ScenarioCard from './components/ScenarioCard.js';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/morning" element={<Morning />} />
 
             <Route path="/choiceCard" element={<ChoiceCard />} />
+            <Route path="/scenarioCard" element={<ScenarioCard />} />
           </Routes>
       </Router>
     </div>
