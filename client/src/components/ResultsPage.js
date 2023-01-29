@@ -49,7 +49,7 @@ function ResultsPage ({title, results, image, nextRoute, coinValue}) {
                     </Grid>
                 </Grid>
                 <Grid item>
-                    <CoinCard value={coinValue} />
+                    <CoinCard/>
                 </Grid>
             </Grid>
         </Box>

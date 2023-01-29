@@ -7,7 +7,9 @@ import Typography from '@mui/material/Typography';
 
 import Wallet from '../images/wallet.png'; 
 
-function CoinCard ({value}) {
+function CoinCard () {
+
+    let value = JSON.parse(sessionStorage.getItem("Money")); 
 
     return(
         <Card 

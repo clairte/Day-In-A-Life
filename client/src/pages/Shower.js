@@ -12,7 +12,7 @@ function Shower () {
                 results="Where did my cell phone go? I only turned around for a moment. Why would I come back to a public place where people judge me and steal from me?"
                 image={PublicBath}
                 nextRoute="/day"
-                coinValue="0"
+                coinValue="5"
             />
         </div>
     )
