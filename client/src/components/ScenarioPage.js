@@ -6,8 +6,9 @@ import Box from '@mui/material/Box';
 
 import ScenarioCard from '../components/ScenarioCard';
 import ChoiceCard from '../components/ChoiceCard';
+import CoinCard from './CoinCard';
 
-function ScenarioPage ({title, scenario, image, choice1, route1, choice2, route2}){
+function ScenarioPage ({title, scenario, image, choice1, route1, choice2, route2, coinValue}){
 
     return(
         <Box
@@ -53,6 +54,9 @@ function ScenarioPage ({title, scenario, image, choice1, route1, choice2, route2
                             />
                         </Grid>
                     </Grid>
+                </Grid>
+                <Grid item>
+                    <CoinCard value={coinValue} />
                 </Grid>
             </Grid>
         </Box>

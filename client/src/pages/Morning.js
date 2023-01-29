@@ -16,6 +16,7 @@ function Morning (){
                 route1="/shower"
                 choice2="Wash clothes"
                 route2="/laundry"
+                coinValue="10"
             />
         </div>
     )
