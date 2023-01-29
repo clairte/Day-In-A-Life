@@ -9,7 +9,7 @@ function Laundry () {
         <div>
             <ResultsPage 
                 title="LAUNDRY ROOM."
-                results="I don’t have cash on me to pay for using the laundry machine, and I don’t have any detergent either. I guess I just won’t wash my clothes today. Subtract 10 from wallet."
+                results="I don’t have enough cash on me to pay for using the laundry machine, and I don’t have any detergent either. I guess I just won’t wash my clothes today. Subtract 10 from wallet."
                 image={LaundryRoom}
                 nextRoute="/day"
                 coinValue="0"
