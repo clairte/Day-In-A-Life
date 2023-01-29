@@ -6,8 +6,9 @@ import Box from '@mui/material/Box';
 
 import ScenarioCard from '../components/ScenarioCard';
 import ChoiceCard from '../components/ChoiceCard';
+import CoinCard from './CoinCard';
 
-function ResultsPage ({title, results, image, nextRoute}) {
+function ResultsPage ({title, results, image, nextRoute, coinValue}) {
     return(
         <Box
         display="flex"
@@ -46,6 +47,9 @@ function ResultsPage ({title, results, image, nextRoute}) {
                             />
                         </Grid>
                     </Grid>
+                </Grid>
+                <Grid item>
+                    <CoinCard value={coinValue} />
                 </Grid>
             </Grid>
         </Box>
