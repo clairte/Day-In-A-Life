@@ -9,7 +9,7 @@ function Laundry ({walletAmount, changeWalletAmount}) {
         <div>
             <ResultsPage 
                 title="LAUNDRY ROOM."
-                results="I didn’t have enough money to pay for detergent, so my clothes are still stained. At least they don’t smell as bad."
+                results={"I didn’t have enough money to pay for detergent, so my clothes are still stained. At least they don’t smell as bad.\nSpent 10 coins."}
                 image={LaundryRoom}
                 nextRoute="/day"
                 walletAmount={walletAmount}

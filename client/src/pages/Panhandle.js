@@ -10,7 +10,7 @@ function Panhandle ({walletAmount, changeWalletAmount}){
         <div>
             <ResultsPage
                 title="PANHANDLING ON THE STREET."
-                results="I reused someone else’s sign asking for donations to a “single mother”. I don’t have kids. I got some racist sneers, but I got some cash too, at least."
+                results={"I reused someone else’s sign asking for donations to a “single mother”. I don’t have kids. I got some racist sneers, but I got some cash too, at least.\nGained 10 coins."}
                 image={DayPanhandle}
                 nextRoute="/night"
                 coinValue="0"

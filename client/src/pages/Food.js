@@ -16,7 +16,7 @@ function Food ({walletAmount, changeWalletAmount}) {
         <div>
             <ResultsPage 
                 title="RELIGIOUS CENTER."
-                results="They took one look at me and refused to serve. So much for “love thy neighbor”. I had to beg for food, and they still called me slurs! I found cheap food at the convenience store."
+                results={"They took one look at me and refused to serve. So much for “love thy neighbor”. I had to beg for food, and they still called me slurs! I found cheap food at the convenience store.\nSpent 5 coins."}
                 image={FoodImage}
                 nextRoute="/end"
                 coinValue="10"
