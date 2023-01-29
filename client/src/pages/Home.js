@@ -29,7 +29,7 @@ function Home({walletAmount, changeWalletAmount}) {
                         HOMELESS SIMULATOR.
                     </Typography>
                     <Typography variant="subtitle1">
-                        Anime themed. 
+                        Anime inspired. 
                     </Typography>
                 </Grid>
                 <Grid item>
