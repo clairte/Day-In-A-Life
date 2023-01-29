@@ -6,6 +6,9 @@ import Morning from './pages/Morning.js';
 import Shower from './pages/Shower.js'; 
 import Laundry from './pages/Laundry.js';
 import Day from './pages/Day.js';
+import Night from './pages/Night.js';
+import Food from './pages/Food.js';
+import Sleep from './pages/Sleep.js';
 
 //Components for testing 
 import ChoiceCard from './components/ChoiceCard.js';
@@ -22,6 +25,9 @@ function App() {
             <Route path="/shower" element={<Shower />} />
             <Route path="/laundry" element={<Laundry />} />
             <Route path="/day" element={<Day />} />
+            <Route path="/night" element={<Night />} />
+            <Route path="/food" element={<Food />} />
+            <Route path="/sleep" element={<Sleep />} />
 
             <Route path="/choiceCard" element={<ChoiceCard />} />
             <Route path="/scenarioCard" element={<ScenarioCard />} />
