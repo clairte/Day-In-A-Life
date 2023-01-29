@@ -28,10 +28,12 @@ function ResultsPage ({walletAmount, changeWalletAmount, title, results, image, 
                     </Typography>
                 </Grid>
                 <Grid item>
+                <div style={{ whiteSpace: "pre-line" }}>
                     <ScenarioCard 
                     text={results}
                     image={image}
                     />
+                    </div>
                 </Grid>
                 <Grid item>
                     <Grid 

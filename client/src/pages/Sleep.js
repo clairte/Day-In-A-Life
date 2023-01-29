@@ -16,7 +16,7 @@ function Sleep ({walletAmount, changeWalletAmount}) {
         <div>
             <ResultsPage 
                 title="SKID ROW."
-                results="I struggled to fall asleep because I was afraid of someone stealing my things or worse, assaulting me. LA is so loud, and smelly with all the pollution. When I woke up, some of my money had been stolen."
+                results={"I struggled to fall asleep because I was afraid of someone stealing my things or worse, assaulting me. LA is so loud, and smelly with all the pollution. When I woke up, some of my money had been stolen.\nLost 5 coins."}
                 image={SleepImage}
                 nextRoute="/end"
                 coinValue="10"
