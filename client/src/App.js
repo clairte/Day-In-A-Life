@@ -6,6 +6,8 @@ import Morning from './pages/Morning.js';
 import Shower from './pages/Shower.js'; 
 import Laundry from './pages/Laundry.js';
 import Day from './pages/Day.js';
+import Panhandle from './pages/Panhandle.js';
+import Steal from './pages/Steal.js';
 import Night from './pages/Night.js';
 import Food from './pages/Food.js';
 import Sleep from './pages/Sleep.js';
@@ -25,6 +27,8 @@ function App() {
             <Route path="/shower" element={<Shower />} />
             <Route path="/laundry" element={<Laundry />} />
             <Route path="/day" element={<Day />} />
+            <Route path="/panhandle" element={<Panhandle />} />
+            <Route path="/steal" element={<Steal />} />
             <Route path="/night" element={<Night />} />
             <Route path="/food" element={<Food />} />
             <Route path="/sleep" element={<Sleep />} />
