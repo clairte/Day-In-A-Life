@@ -9,19 +9,19 @@ import Box from '@mui/material/Box';
 import ScenarioCard from '../components/ScenarioCard';
 import ChoiceCard from '../components/ChoiceCard';
 
-import LaundryRoom from '../images/laundry.jpg'; 
+import SleepImage from '../images/night_sleep.png'; 
 
-function Laundry () {
+function Sleep () {
     return(
         <div>
             <ResultsPage 
-                title="LAUNDRY ROOM."
-                results="I don’t have cash on me to pay for using the laundry machine, and I don’t have any detergent either. I guess I just won’t wash my clothes today. Subtract 10 from wallet."
-                image={LaundryRoom}
-                nextRoute="/day"
+                title="SKID ROW."
+                results="I struggled to fall asleep because I was afraid of someone stealing my things or worse, assaulting me. LA is so loud, and smelly with all the pollution."
+                image={SleepImage}
+                nextRoute="/end"
             />
         </div>
     )
 }
 
-export default Laundry; 
+export default Sleep; 

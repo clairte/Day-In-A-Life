@@ -9,19 +9,19 @@ import Box from '@mui/material/Box';
 import ScenarioCard from '../components/ScenarioCard';
 import ChoiceCard from '../components/ChoiceCard';
 
-import LaundryRoom from '../images/laundry.jpg'; 
+import FoodImage from '../images/night_food.png'; 
 
-function Laundry () {
+function Food () {
     return(
         <div>
             <ResultsPage 
-                title="LAUNDRY ROOM."
-                results="I don’t have cash on me to pay for using the laundry machine, and I don’t have any detergent either. I guess I just won’t wash my clothes today. Subtract 10 from wallet."
-                image={LaundryRoom}
-                nextRoute="/day"
+                title="RELIGIOUS CENTER."
+                results="They took one look at me and refused to serve. So much for “love thy neighbor”. I had to beg for food, and they still called me slurs!"
+                image={FoodImage}
+                nextRoute="/end"
             />
         </div>
     )
 }
 
-export default Laundry; 
+export default Food; 
