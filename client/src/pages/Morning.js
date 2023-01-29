@@ -4,7 +4,7 @@ import ScenarioPage from '../components/ScenarioPage';
 
 import MorningOutside from '../images/morning.png'; 
 
-function Morning (){
+function Morning ({walletAmount, changeWalletAmount}){
 
     return(
         <div>
@@ -18,6 +18,8 @@ function Morning (){
                 choice2="Wash clothes"
                 route2="/laundry"
                 coinValue2="-5"
+                            walletAmount={walletAmount}
+                            changeWalletAmount={changeWalletAmount}
             />
         </div>
     )

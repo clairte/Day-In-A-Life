@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React, { useEffect } from 'react'; 
 import {BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom";
 
 import Home from './pages/Home.js'; 
@@ -13,31 +13,42 @@ import Food from './pages/Food.js';
 import Sleep from './pages/Sleep.js';
 import End from './pages/End.js';
 
-//Components for testing 
-import ChoiceCard from './components/ChoiceCard.js';
-import ScenarioCard from './components/ScenarioCard.js';
-import CoinCard from './components/CoinCard.js';
+const defaultWalletAmount = 0;
 
 function App() {
+
+  const [walletAmount, setWalletAmount] = React.useState(defaultWalletAmount);
+
+  useEffect(() => {
+    let walletString = sessionStorage.getItem("Money");
+    
+    if (typeof walletString === "string") {
+        if (walletString !== "NaN") {
+            setWalletAmount(Number(walletString));
+        }
+    }
+  });
+
+  const changeWalletAmount = (walletValue) => {
+    setWalletAmount(walletValue);
+    sessionStorage.setItem("Money", walletValue);
+  }
+
   return (
     <div>
       <Router>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/morning" element={<Morning />} />
-            <Route path="/shower" element={<Shower />} />
-            <Route path="/laundry" element={<Laundry />} />
-            <Route path="/day" element={<Day />} />
-            <Route path="/panhandle" element={<Panhandle />} />
-            <Route path="/steal" element={<Steal />} />
-            <Route path="/night" element={<Night />} />
-            <Route path="/food" element={<Food />} />
-            <Route path="/sleep" element={<Sleep />} />
-            <Route path="/end" element={<End />} />
-
-            <Route path="/choiceCard" element={<ChoiceCard />} />
-            <Route path="/scenarioCard" element={<ScenarioCard />} />
-            <Route path="/coinCard" element={<CoinCard />} />
+            <Route path="/" element={<Home walletAmount={walletAmount} changeWalletAmount={changeWalletAmount} />} />
+            <Route path="/morning" element={<Morning walletAmount={walletAmount} changeWalletAmount={changeWalletAmount} />} />
+            <Route path="/shower" element={<Shower walletAmount={walletAmount} changeWalletAmount={changeWalletAmount} />} />
+            <Route path="/laundry" element={<Laundry walletAmount={walletAmount} changeWalletAmount={changeWalletAmount} />} />
+            <Route path="/day" element={<Day walletAmount={walletAmount} changeWalletAmount={changeWalletAmount} />} />
+            <Route path="/panhandle" element={<Panhandle walletAmount={walletAmount} changeWalletAmount={changeWalletAmount} />} />
+            <Route path="/steal" element={<Steal walletAmount={walletAmount} changeWalletAmount={changeWalletAmount} />} />
+            <Route path="/night" element={<Night walletAmount={walletAmount} changeWalletAmount={changeWalletAmount} />} />
+            <Route path="/food" element={<Food walletAmount={walletAmount} changeWalletAmount={changeWalletAmount} />} />
+            <Route path="/sleep" element={<Sleep walletAmount={walletAmount} changeWalletAmount={changeWalletAmount} />} />
+            <Route path="/end" element={<End walletAmount={walletAmount} changeWalletAmount={changeWalletAmount} />} />
           </Routes>
       </Router>
     </div>

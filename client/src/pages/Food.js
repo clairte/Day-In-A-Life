@@ -11,7 +11,7 @@ import ChoiceCard from '../components/ChoiceCard';
 
 import FoodImage from '../images/night_food.png'; 
 
-function Food () {
+function Food ({walletAmount, changeWalletAmount}) {
     return(
         <div>
             <ResultsPage 
@@ -20,6 +20,8 @@ function Food () {
                 image={FoodImage}
                 nextRoute="/end"
                 coinValue="10"
+                walletAmount={walletAmount}
+                changeWalletAmount={changeWalletAmount}
             />
         </div>
     )

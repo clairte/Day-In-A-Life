@@ -3,20 +3,19 @@ import React from 'react';
 import Button from '@mui/material/Button';
 
 
-function DefaultButton({text, route, coinValue}) {
+function DefaultButton({walletAmount, changeWalletAmount, text, route, coinValue}) {
 
     const handleClick = (e) => { 
         e.preventDefault();
-        window.location.href = route;
-        let finalValue = JSON.parse(sessionStorage.getItem("Money")) + parseInt(coinValue);
-        sessionStorage.setItem("Money", JSON.stringify(finalValue)); 
+        changeWalletAmount(walletAmount + Number(coinValue));
+        window.location.href = route; 
     }
 
     return (
         <div>
                 <Button 
                 size="small"
-                onClick= {handleClick}
+                onClick={handleClick}
                 style={textStyle}>
                 {text} 
                 </Button> 

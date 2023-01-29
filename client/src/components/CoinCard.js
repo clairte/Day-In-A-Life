@@ -7,9 +7,9 @@ import Typography from '@mui/material/Typography';
 
 import Wallet from '../images/wallet.png'; 
 
-function CoinCard () {
+function CoinCard ({walletAmount, changeWalletAmount}) {
 
-    let value = JSON.parse(sessionStorage.getItem("Money")); 
+    
 
     return(
         <Card 
@@ -24,7 +24,7 @@ function CoinCard () {
             />
             <CardContent sx={{ flex: '1 0 auto', p:'2' }}>
                 <Typography variant="body1">
-                    {value}
+                    {walletAmount}
                  </Typography>
             </CardContent>
         </Card>

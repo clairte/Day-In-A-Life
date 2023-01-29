@@ -4,7 +4,7 @@ import ScenarioPage from '../components/ScenarioPage';
 
 import DayStreet from '../images/day.png'; 
 
-function Day (){
+function Day ({walletAmount, changeWalletAmount}){
 
     return(
         <div>
@@ -14,9 +14,12 @@ function Day (){
                 image={DayStreet}
                 choice1="Panhandle"
                 route1="/panhandle"
+                coinValue1="10"
                 choice2="Steal"
                 route2="/steal"
-                coinValue="0"
+                coinValue2="0"
+                walletAmount={walletAmount}
+                changeWalletAmount={changeWalletAmount}
             />
         </div>
     )

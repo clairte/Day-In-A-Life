@@ -8,7 +8,7 @@ import ScenarioCard from '../components/ScenarioCard';
 import ChoiceCard from '../components/ChoiceCard';
 import CoinCard from './CoinCard';
 
-function ResultsPage ({title, results, image, nextRoute, coinValue}) {
+function ResultsPage ({walletAmount, changeWalletAmount, title, results, image, nextRoute, coinValue}) {
     return(
         <Box
         display="flex"
@@ -44,12 +44,19 @@ function ResultsPage ({title, results, image, nextRoute, coinValue}) {
                             <ChoiceCard 
                             choice="next"
                             route={nextRoute}
+                            moneyValue="0"
+                            walletAmount={walletAmount}
+                            changeWalletAmount={changeWalletAmount}
                             />
                         </Grid>
                     </Grid>
                 </Grid>
                 <Grid item>
-                    <CoinCard/>
+                    <CoinCard
+                            walletAmount={walletAmount}
+                            changeWalletAmount={changeWalletAmount}
+                                
+                    />
                 </Grid>
             </Grid>
         </Box>

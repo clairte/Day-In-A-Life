@@ -11,7 +11,7 @@ import ChoiceCard from '../components/ChoiceCard';
 
 import SleepImage from '../images/night_sleep.png'; 
 
-function Sleep () {
+function Sleep ({walletAmount, changeWalletAmount}) {
     return(
         <div>
             <ResultsPage 
@@ -20,6 +20,8 @@ function Sleep () {
                 image={SleepImage}
                 nextRoute="/end"
                 coinValue="10"
+                walletAmount={walletAmount}
+                changeWalletAmount={changeWalletAmount}
             />
         </div>
     )

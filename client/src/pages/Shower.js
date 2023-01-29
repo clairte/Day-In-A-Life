@@ -4,7 +4,7 @@ import ResultsPage from '../components/ResultsPage';
 
 import PublicBath from '../images/bathroom.jpg';  
 
-function Shower () {
+function Shower ({walletAmount, changeWalletAmount}) {
     return(
         <div>
             <ResultsPage 
@@ -13,6 +13,8 @@ function Shower () {
                 image={PublicBath}
                 nextRoute="/day"
                 coinValue="5"
+                            walletAmount={walletAmount}
+                            changeWalletAmount={changeWalletAmount}
             />
         </div>
     )
