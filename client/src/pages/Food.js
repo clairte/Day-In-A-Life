@@ -16,7 +16,7 @@ function Food () {
         <div>
             <ResultsPage 
                 title="RELIGIOUS CENTER."
-                results="They took one look at me and refused to serve. So much for “love thy neighbor”. I had to beg for food, and they still called me slurs!"
+                results="They took one look at me and refused to serve. So much for “love thy neighbor”. I had to beg for food, and they still called me slurs! I found cheap food at the convenience store."
                 image={FoodImage}
                 nextRoute="/end"
                 coinValue="10"

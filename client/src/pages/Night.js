@@ -10,7 +10,7 @@ function Night (){
         <div>
             <ScenarioPage
                 title="NIGHT ON THE STREET. "
-                scenario="Michelle: All day, I’ve done nothing except grind for money. I’m so hungry, and the church food pantry is nearby, but I’m also so sleepy from trying to survive on such little. It’s so late, how should I end my day?"
+                scenario="Michelle: All day, I’ve done nothing except grind for money. I’m so hungry. The church food pantry is nearby, but I’m also so sleepy from trying to survive on so little. It’s so late, how should I end my day?"
                 image={NightImage}
                 choice1="Food"
                 route1="/food"
