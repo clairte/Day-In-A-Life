@@ -9,8 +9,8 @@ function Steal (){
     return(
         <div>
             <ResultsPage
-                title="PANHANDLING ON THE STREET."
-                results="I reused someone else’s sign asking for donations to a “single mother”. I don’t have kids. I got some racist sneers, but I got some cash too, at least."
+                title="STEALING ESSENTIALS."
+                results="Security called the police on me for just being in the store! I left empty handed. Even if I had enough money to pay, they might not have believed it was real currency."
                 image={DaySteal}
                 nextRoute="/night"
                 coinValue="0"
