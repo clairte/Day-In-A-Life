@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 import Home from './pages/Home.js'; 
 import Morning from './pages/Morning.js'; 
+import Shower from './pages/Shower.js'; 
 import Laundry from './pages/Laundry.js';
 import Day from './pages/Day.js';
 
@@ -18,6 +19,7 @@ function App() {
           <Routes>
             <Route path="/home" element={<Home />} />
             <Route path="/morning" element={<Morning />} />
+            <Route path="/shower" element={<Shower />} />
             <Route path="/laundry" element={<Laundry />} />
             <Route path="/day" element={<Day />} />
 
