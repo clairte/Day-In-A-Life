@@ -16,6 +16,7 @@ function Night (){
                 route1="/food"
                 choice2="Sleep"
                 route2="/sleep"
+                coinValue="10"
             />
         </div>
     )
