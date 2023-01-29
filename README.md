@@ -7,7 +7,7 @@ Each choice will correspond to a different ending and possibilites.
 
 # Trying this project 
 
-1. Clone the project: `git clone <repo code>` 
+1. Clone the project: `git clone https://github.com/clairte/Day-In-A-Life.git` 
 
 2. cd into our repository and into `/client` folder 
 
