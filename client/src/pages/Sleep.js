@@ -16,9 +16,10 @@ function Sleep () {
         <div>
             <ResultsPage 
                 title="SKID ROW."
-                results="I struggled to fall asleep because I was afraid of someone stealing my things or worse, assaulting me. LA is so loud, and smelly with all the pollution."
+                results="I struggled to fall asleep because I was afraid of someone stealing my things or worse, assaulting me. LA is so loud, and smelly with all the pollution. When I woke up, some of my money had been stolen."
                 image={SleepImage}
                 nextRoute="/end"
+                coinValue="10"
             />
         </div>
     )
