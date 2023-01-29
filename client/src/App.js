@@ -11,6 +11,7 @@ import Steal from './pages/Steal.js';
 import Night from './pages/Night.js';
 import Food from './pages/Food.js';
 import Sleep from './pages/Sleep.js';
+import End from './pages/End.js';
 
 //Components for testing 
 import ChoiceCard from './components/ChoiceCard.js';
@@ -32,6 +33,7 @@ function App() {
             <Route path="/night" element={<Night />} />
             <Route path="/food" element={<Food />} />
             <Route path="/sleep" element={<Sleep />} />
+            <Route path="/end" element={<End />} />
 
             <Route path="/choiceCard" element={<ChoiceCard />} />
             <Route path="/scenarioCard" element={<ScenarioCard />} />
