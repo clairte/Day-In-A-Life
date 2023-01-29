@@ -15,4 +15,9 @@ Each choice will correspond to a different ending and possibilites.
 
 4. Start the application! `npm start` 
 
+# Project Demo 
+
+<img width="718" alt="Screen Shot 2023-01-28 at 9 31 16 PM" src="https://user-images.githubusercontent.com/102333751/215307051-cb0c3135-9984-4e7f-8bad-ad043ac52dc5.png">
+
+<img width="739" alt="Screen Shot 2023-01-28 at 9 31 49 PM" src="https://user-images.githubusercontent.com/102333751/215307067-260df023-82de-4818-821b-3d14f0c90b27.png">
 
