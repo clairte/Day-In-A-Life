@@ -4,7 +4,7 @@ import ResultsPage from '../components/ResultsPage';
 
 import DaySteal from '../images/day_steal.png'; 
 
-function Steal (){
+function Steal ({walletAmount, changeWalletAmount}){
 
     return(
         <div>
@@ -14,6 +14,8 @@ function Steal (){
                 image={DaySteal}
                 nextRoute="/night"
                 coinValue="0"
+                walletAmount={walletAmount}
+                changeWalletAmount={changeWalletAmount}
             />
         </div>
     )

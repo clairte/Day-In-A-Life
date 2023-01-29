@@ -9,7 +9,7 @@ import ChoiceCard from '../components/ChoiceCard';
 
 import EndImage from '../images/end.png'; 
 
-function End () {
+function End ({walletAmount, changeWalletAmount}) {
     return (
     <Box
         display="flex"
@@ -46,7 +46,9 @@ function End () {
                         <Grid item>
                             <ChoiceCard 
                             choice="Return to Home"
-                            route="/home"
+                            route="/"
+                            walletAmount={walletAmount}
+                            changeWalletAmount={changeWalletAmount}
                             />
                         </Grid>
                     </Grid>

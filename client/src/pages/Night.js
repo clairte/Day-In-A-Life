@@ -4,7 +4,7 @@ import ScenarioPage from '../components/ScenarioPage';
 
 import NightImage from '../images/night.png'; 
 
-function Night (){
+function Night ({walletAmount, changeWalletAmount}){
 
     return(
         <div>
@@ -14,9 +14,12 @@ function Night (){
                 image={NightImage}
                 choice1="Food"
                 route1="/food"
+                coinValue1="-5"
                 choice2="Sleep"
                 route2="/sleep"
-                coinValue="10"
+                coinValue2="-5"
+                walletAmount={walletAmount}
+                changeWalletAmount={changeWalletAmount}
             />
         </div>
     )

@@ -9,7 +9,7 @@ import ChoiceCard from '../components/ChoiceCard';
 
 import HomeImage from '../images/home.png';
 
-function Home() {
+function Home({walletAmount, changeWalletAmount}) {
 
     return (
         <Box
@@ -50,6 +50,8 @@ function Home() {
                             choice="Begin"
                             route="/morning"
                             moneyValue="10"
+                            walletAmount={walletAmount}
+                            changeWalletAmount={changeWalletAmount}
                             />
                         </Grid>
                     </Grid>
