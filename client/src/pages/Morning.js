@@ -14,9 +14,10 @@ function Morning (){
                 image={MorningOutside}
                 choice1="Shower"
                 route1="/shower"
+                coinValue1="-10"
                 choice2="Wash clothes"
                 route2="/laundry"
-                coinValue="10"
+                coinValue2="-5"
             />
         </div>
     )

@@ -49,6 +49,7 @@ function Home() {
                             <ChoiceCard 
                             choice="Begin"
                             route="/morning"
+                            moneyValue="10"
                             />
                         </Grid>
                     </Grid>

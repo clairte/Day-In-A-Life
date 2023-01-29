@@ -8,7 +8,7 @@ import ScenarioCard from '../components/ScenarioCard';
 import ChoiceCard from '../components/ChoiceCard';
 import CoinCard from './CoinCard';
 
-function ScenarioPage ({title, scenario, image, choice1, route1, choice2, route2, coinValue}){
+function ScenarioPage ({title, scenario, image, choice1, route1, coinValue1, choice2, route2, coinValue2}){
 
     return(
         <Box
@@ -45,18 +45,20 @@ function ScenarioPage ({title, scenario, image, choice1, route1, choice2, route2
                             <ChoiceCard 
                             choice={choice1}
                             route={route1}
+                            moneyValue={coinValue1}
                             />
                         </Grid>
                         <Grid item>
                             <ChoiceCard 
                             choice={choice2}
                             route={route2}
+                            moneyValue={coinValue2}
                             />
                         </Grid>
                     </Grid>
                 </Grid>
                 <Grid item>
-                    <CoinCard value={coinValue} />
+                    <CoinCard/>
                 </Grid>
             </Grid>
         </Box>

@@ -1,18 +1,25 @@
 import React from 'react'; 
 
 import Button from '@mui/material/Button';
-import { Link } from 'react-router-dom'; 
 
 
-function DefaultButton({text, route}) {
+function DefaultButton({text, route, coinValue}) {
+
+    const handleClick = (e) => { 
+        e.preventDefault();
+        window.location.href = route;
+        let finalValue = JSON.parse(sessionStorage.getItem("Money")) + parseInt(coinValue);
+        sessionStorage.setItem("Money", JSON.stringify(finalValue)); 
+    }
+
     return (
         <div>
-            <Button 
-            component={Link} to={route}
-            size="small"
-            style={textStyle}>
-            {text} 
-            </Button> 
+                <Button 
+                size="small"
+                onClick= {handleClick}
+                style={textStyle}>
+                {text} 
+                </Button> 
         </div>
     )
 }
